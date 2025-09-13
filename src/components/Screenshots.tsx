@@ -1,24 +1,30 @@
 import React from 'react';
-import storefrontScreenshot from '@/assets/storefront-screenshot.jpg';
-import aiListingScreenshot from '@/assets/ai-listing-screenshot.jpg';
-import checkoutScreenshot from '@/assets/checkout-screenshot.jpg';
+import dashboardScreenshot from '@/assets/dashboard-screenshot.png';
+import listingScreenshot from '@/assets/listing-screenshot.png';
+import listingAiScreenshot from '@/assets/listing-ai-screenshot.png';
+import orderTrackingScreenshot from '@/assets/order-tracking-screenshot.png';
 
 const Screenshots = () => {
   const screenshots = [
     {
-      image: storefrontScreenshot,
-      title: "Seller Storefront",
-      caption: "Professional seller pages with all your listings in one place"
+      image: dashboardScreenshot,
+      title: "Dashboard",
+      caption: "Complete seller dashboard to manage your listings and orders"
     },
     {
-      image: aiListingScreenshot,
-      title: "AI Listing Creation", 
-      caption: "Upload a photo and watch AI generate your complete listing"
+      image: listingScreenshot,
+      title: "Landing_Page-Listing", 
+      caption: "Upload a photo and start creating your listing"
     },
     {
-      image: checkoutScreenshot,
-      title: "Secure Checkout",
-      caption: "Stripe-powered payments with guest checkout and order tracking"
+      image: listingAiScreenshot,
+      title: "Landing_Page-ListingAI",
+      caption: "AI generates complete listing details in seconds"
+    },
+    {
+      image: orderTrackingScreenshot,
+      title: "Landing_Page-OrderTracking",
+      caption: "Track orders and manage customer communications"
     }
   ];
 
@@ -34,7 +40,7 @@ const Screenshots = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="space-y-4">
               <div className="relative bg-card rounded-xl shadow-large overflow-hidden border border-border/50">

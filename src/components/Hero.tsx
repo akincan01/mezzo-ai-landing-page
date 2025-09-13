@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import heroMockup from '@/assets/hero-mockup.jpg';
+import heroMockup from '@/assets/mvp-ui-screenshot.png';
 
 const Hero = () => {
   return (
@@ -32,7 +32,7 @@ const Hero = () => {
             <div className="relative bg-card rounded-2xl shadow-large overflow-hidden">
               <img 
                 src={heroMockup}
-                alt="Mezzo AI MVP UI Preview - Seller Dashboard"
+                alt="Landing_Page-MVP UI"
                 className="w-full h-auto"
               />
             </div>

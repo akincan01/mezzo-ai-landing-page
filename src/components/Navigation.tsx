@@ -1,15 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Globe } from 'lucide-react';
-import { 
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-  DropdownMenuItem,
-} from '@/components/ui/dropdown-menu';
 
 const Navigation = () => {
-  const [language, setLanguage] = useState<'EN' | 'FR'>('EN');
 
   const navLinks = [
     { label: 'Product', href: '#product' },
@@ -46,27 +38,8 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Right Side - Language Toggle & CTA */}
+          {/* Right Side - CTA */}
           <div className="flex items-center space-x-4">
-            {/* Language Toggle */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="flex items-center space-x-1">
-                  <Globe className="h-4 w-4" />
-                  <span>{language}</span>
-                  <ChevronDown className="h-3 w-3" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setLanguage('EN')}>
-                  English
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('FR')}>
-                  Français
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
             {/* CTA Button */}
             <Button variant="cta" size="sm">
               Join Waitlist
