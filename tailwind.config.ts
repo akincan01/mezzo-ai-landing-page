@@ -13,7 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'sora': ['Sora', 'Inter', 'system-ui', 'sans-serif'],
+        'inter': ['Inter', 'system-ui', 'sans-serif'],
+        'manrope': ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        // Brand colors
+        brand: {
+          primary: "hsl(var(--brand-primary))",
+          accent: "hsl(var(--brand-accent))", 
+          secondary: "hsl(var(--brand-secondary))",
+          background: "hsl(var(--brand-background))",
+        },
+        // Semantic colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,6 +70,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'medium': 'var(--shadow-medium)', 
+        'large': 'var(--shadow-large)',
       },
       borderRadius: {
         lg: "var(--radius)",
