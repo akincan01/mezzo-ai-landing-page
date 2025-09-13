@@ -7,7 +7,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Screenshots from '@/components/Screenshots';
 import ForSellers from '@/components/ForSellers';
 import Roadmap from '@/components/Roadmap';
-import Waitlist from '@/components/Waitlist';
+
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
@@ -23,7 +23,7 @@ const Index = () => {
         <Screenshots />
         <ForSellers />
         <Roadmap />
-        <Waitlist />
+        
         <FAQ />
       </main>
       <Footer />

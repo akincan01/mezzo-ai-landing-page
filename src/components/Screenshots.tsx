@@ -55,11 +55,11 @@ const Screenshots = () => {
                 </h3>
               </div>
               
-              <div className="relative bg-card rounded-xl shadow-large overflow-hidden border border-border/50 aspect-[4/3]">
+              <div className="relative bg-card rounded-xl shadow-large overflow-hidden border border-border/50 min-h-[300px] flex items-center justify-center">
                 <img 
                   src={screenshot.image}
                   alt={screenshot.title}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto object-contain max-h-[400px]"
                 />
               </div>
               
