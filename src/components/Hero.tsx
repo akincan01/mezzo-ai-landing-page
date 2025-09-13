@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-sora font-bold text-primary leading-tight">
-                AI-powered marketplace for small social sellers
+                AI-powered social commerce marketplace for small sellers
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground font-manrope leading-relaxed">
@@ -23,9 +23,6 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="cta" size="lg" className="text-lg px-8 py-4">
                 Join Waitlist
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                Become a Pilot Seller
               </Button>
             </div>
           </div>

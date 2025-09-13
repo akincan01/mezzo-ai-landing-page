@@ -36,7 +36,7 @@ const ForSellers = () => {
                 Who it's for
               </h2>
               <p className="text-xl text-muted-foreground font-manrope leading-relaxed">
-                Perfect for Instagram/TikTok sellers posting 5–20 items/week who find Shopify "overkill" for their one-off inventory.
+                Perfect for small Instagram/TikTok sellers who find Shopify "overkill" for their business.
               </p>
             </div>
 
@@ -74,26 +74,9 @@ const ForSellers = () => {
               </h3>
               
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
-                  <p className="text-muted-foreground font-manrope">
-                    <span className="font-medium text-primary">Social selling is booming</span> — More creators are monetizing their audiences than ever
-                  </p>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
-                  <p className="text-muted-foreground font-manrope">
-                    <span className="font-medium text-primary">Existing tools don't fit</span> — One-off inventory needs different solutions than traditional e-commerce
-                  </p>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>
-                  <p className="text-muted-foreground font-manrope">
-                    <span className="font-medium text-primary">AI removes friction</span> — Listing creation speed directly impacts turnover and profitability
-                  </p>
-                </div>
+                <p className="text-muted-foreground font-manrope leading-relaxed">
+                  <span className="font-medium text-primary">Existing tools don't fit</span> — For small sellers, Shopify is overly complex, and social media leaves them invisible to buyers. A dedicated marketplace gives them visibility and the technology to simplify their workflows.
+                </p>
               </div>
             </div>
           </div>

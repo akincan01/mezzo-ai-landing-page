@@ -22,18 +22,6 @@ const Footer = () => {
             <span>by Mezzo AI</span>
           </div>
 
-          {/* Middle - Links */}
-          <div className="flex items-center space-x-6 text-sm font-manrope">
-            <a href="/privacy" className="hover:text-secondary transition-fast">
-              Privacy
-            </a>
-            <a href="/terms" className="hover:text-secondary transition-fast">
-              Terms
-            </a>
-            <a href="mailto:mezzo-ai@gmail.com" className="hover:text-secondary transition-fast">
-              Contact: mezzo-ai@gmail.com
-            </a>
-          </div>
 
           {/* Right - Language Toggle */}
           <DropdownMenu>

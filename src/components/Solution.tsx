@@ -6,7 +6,7 @@ const Solution = () => {
     {
       icon: Store,
       title: "Storefronts",
-      description: "Professional seller pages with /s/{slug}.",
+      description: "Professional seller pages with clean, custom URLs.",
     },
     {
       icon: Shield,
