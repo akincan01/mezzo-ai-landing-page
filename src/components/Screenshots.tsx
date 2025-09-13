@@ -1,26 +1,36 @@
 import React from 'react';
+import aiListingScreenshot from '@/assets/ai-listing-screenshot.png';
+import browseScreenshot from '@/assets/browse-screenshot.png';
+import createListingScreenshot from '@/assets/create-listing-screenshot.png';
 import dashboardScreenshot from '@/assets/dashboard-screenshot.png';
-import listingScreenshot from '@/assets/listing-screenshot.png';
-import listingAiScreenshot from '@/assets/listing-ai-screenshot.png';
 import orderTrackingScreenshot from '@/assets/order-tracking-screenshot.png';
 
 const Screenshots = () => {
   const screenshots = [
     {
+      image: aiListingScreenshot,
+      title: "AI-Powered Listing Creation",
+      caption: "Upload a photo and let AI create professional listings instantly"
+    },
+    {
+      image: browseScreenshot,
+      title: "Marketplace Browsing",
+      caption: "Discover unique finds from sellers worldwide"
+    },
+    {
+      image: createListingScreenshot,
+      title: "Dual Creation Workflows",
+      caption: "Choose between manual creation or AI-powered generation"
+    },
+    {
       image: dashboardScreenshot,
-      caption: "Complete seller dashboard to manage your listings and orders"
-    },
-    {
-      image: listingScreenshot,
-      caption: "Upload a photo and start creating your listing"
-    },
-    {
-      image: listingAiScreenshot,
-      caption: "AI generates complete listing details in seconds"
+      title: "Seller Dashboard",
+      caption: "Complete dashboard to manage your listings and orders"
     },
     {
       image: orderTrackingScreenshot,
-      caption: "Track orders and manage customer communications"
+      title: "Order Tracking & Management",
+      caption: "Track orders and manage customer communications seamlessly"
     }
   ];
 
@@ -36,13 +46,19 @@ const Screenshots = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="space-y-4">
+              <div className="text-center mb-3">
+                <h3 className="text-lg font-sora font-semibold text-primary">
+                  {screenshot.title}
+                </h3>
+              </div>
+              
               <div className="relative bg-card rounded-xl shadow-large overflow-hidden border border-border/50 aspect-[4/3]">
                 <img 
                   src={screenshot.image}
-                  alt={`MVP Preview ${index + 1}`}
+                  alt={screenshot.title}
                   className="w-full h-full object-cover object-top"
                 />
               </div>

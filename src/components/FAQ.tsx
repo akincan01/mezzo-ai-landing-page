@@ -9,10 +9,6 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "Is this only for Instagram?",
-      answer: "No, Mezzo AI works for any social sellers. Instagram and TikTok are the most common platforms our sellers use, but you can sell from any social media platform or even offline and use Mezzo AI as your storefront and payment solution."
-    },
-    {
       question: "Do I need my own website?",
       answer: "Not at all! You get a professional Mezzo AI storefront at /s/{your-username}. This becomes your professional seller page where customers can browse all your items, make purchases, and track their orders."
     },
@@ -21,8 +17,8 @@ const FAQ = () => {
       answer: "All payments are processed securely by Stripe, the world's most trusted online payment system. We never handle your money directly - it goes straight from your customers to your bank account, minus our small transaction fee."
     },
     {
-      question: "Do you support French?",
-      answer: "Absolutely! Mezzo AI has full English and French UI support. Our AI can generate listings in both languages, and we support Euro pricing for European sellers."
+      question: "How does AI listing generation work?",
+      answer: "Simply upload a photo of your item and our AI analyzes it to generate professional titles, descriptions, pricing suggestions, and category classifications. You can edit everything before publishing to ensure it matches your style."
     }
   ];
 
