@@ -8,22 +8,18 @@ const Screenshots = () => {
   const screenshots = [
     {
       image: dashboardScreenshot,
-      title: "Dashboard",
       caption: "Complete seller dashboard to manage your listings and orders"
     },
     {
       image: listingScreenshot,
-      title: "Landing_Page-Listing", 
       caption: "Upload a photo and start creating your listing"
     },
     {
       image: listingAiScreenshot,
-      title: "Landing_Page-ListingAI",
       caption: "AI generates complete listing details in seconds"
     },
     {
       image: orderTrackingScreenshot,
-      title: "Landing_Page-OrderTracking",
       caption: "Track orders and manage customer communications"
     }
   ];
@@ -43,18 +39,15 @@ const Screenshots = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="space-y-4">
-              <div className="relative bg-card rounded-xl shadow-large overflow-hidden border border-border/50">
+              <div className="relative bg-card rounded-xl shadow-large overflow-hidden border border-border/50 aspect-[4/3]">
                 <img 
                   src={screenshot.image}
-                  alt={screenshot.title}
-                  className="w-full h-auto"
+                  alt={`MVP Preview ${index + 1}`}
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               
-              <div className="text-center space-y-2">
-                <h3 className="text-lg font-sora font-semibold text-primary">
-                  {screenshot.title}
-                </h3>
+              <div className="text-center">
                 <p className="text-sm text-muted-foreground font-manrope">
                   {screenshot.caption}
                 </p>
