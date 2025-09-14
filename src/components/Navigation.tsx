@@ -38,13 +38,6 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Right Side - CTA */}
-          <div className="flex items-center space-x-4">
-            {/* CTA Button */}
-            <Button variant="cta" size="sm">
-              Join Waitlist
-            </Button>
-          </div>
         </div>
       </div>
     </nav>
